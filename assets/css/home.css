@@ -3,7 +3,6 @@ section.home {
     text-align: center;
     position: relative;
     z-index: -5;
-    min-height: 100vh;
 }
 section.home::before {
     content: "";
@@ -15,6 +14,9 @@ section.home::before {
     height: 100%;
     z-index: -3;
     opacity: .8;
+}
+section.home h1 {
+    font-size: 40px;
 }
 section.home .logo img {
     width: 65px;
@@ -30,7 +32,7 @@ section.home .video {
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,0.3);    
     width: fit-content;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 section.home .overlay-imgs {
@@ -69,7 +71,7 @@ section.home .overlay-imgs::after {
     background-size: cover;
     width: 100px;
     height: 100px;
-    bottom: 15px;
+    bottom: 45px;
     left: 10px;
 }
 /* End home section  */
@@ -86,10 +88,16 @@ section.testimonials .box {
     box-shadow: 2px 3px 1px #00000021;
 }
 section.testimonials .box  .starts img {
-    width: 110px;
+    width: 175px;
 }
-section.testimonials blockquote{
+section.testimonials blockquote {
     position: relative;
+    font-size: 13px;
+}
+@media (min-width: 992px) {
+    section.testimonials blockquote {
+        font-size: 15px;
+    }
 }
 section.testimonials blockquote::before {
     content: "\f10e";
@@ -119,7 +127,49 @@ section.testimonials blockquote::after {
 /* Start Section why-us  */
 section.why-us {
     background: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
     color: white;
+}
+section.why-us .my-wave {
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    transform: rotate(358deg);
+    width: 200%;
+    background: white;    
+}
+section.why-us .box {
+    position: relative;
+}
+section.why-us .box:nth-child(1),
+section.why-us .box:nth-child(3) {
+    margin-top: 30px;
+}
+section.why-us .box::before {
+    position: absolute;
+    content: "1";
+    width: 100%;
+    height: 100%;
+    font-size: 148px;
+    color: white;
+    top: 0px;
+    opacity: 0.1;
+    margin-top: -87px;
+    right: 0;
+}
+section.why-us .box:nth-child(1)::before {
+    content: "2";
+}
+section.why-us .box:nth-child(3)::before {
+    content: "3";
+}
+section.why-us .box > * {
+    position: relative;
+    z-index: 33;
 }
 section.why-us .box .img {
     width: 50px;
@@ -138,7 +188,13 @@ section.benefet .contianer-text {
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-right: 150px;
+    margin-right: 15px;
+}
+@media (min-width: 992px) {
+    section.benefet .contianer-text {
+        margin-right: 150px;
+    }
+    
 }
 section.benefet .texts img {
     width: 80px;
@@ -149,14 +205,31 @@ section.over {
     background-color: #eee;
 }
 section.over .texts {
-    margin-right: 150px;
+    margin-right: 15px;
+}
+@media (min-width: 992px) {
+    section.over .texts {
+        margin-right: 150px;
+    }
+    
 }
 section.over .contianer-text-over {
     display: flex;
     gap: 15px;
     align-items: center;
+    justify-content: space-between;
+}
+section.over .contianer-text-over > div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 section.over .contianer-text-over img {
     width: 80px;
+}
+
+section.over  .old-price {
+    padding-left: 20px;
+    width: 300px;
 }
 /* End over section  */

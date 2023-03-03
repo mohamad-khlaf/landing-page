@@ -9,3 +9,14 @@
 .gap-2 {
     gap: 24px;
 }
+
+@media (max-width: 768px) {
+    .grid-md-1 {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+    .grid-md-2 {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}

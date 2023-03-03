@@ -15,7 +15,6 @@ img,
 video {
     max-width: 100%;
 }
-max-width: 100%;
 .container {
     padding: 0px 15px;
 }
@@ -60,22 +59,18 @@ video {
 }
 /* End circle  */
 /* Start wave  */
-section.home-wave {
-
-    padding: 0;
-}
 .container-wave {
     position: relative;
-    background: var(--main-color);
-    height: 80px;
+    background: #39A2D1;
+    height: 20px;
   }
   
   .wave {
     position: absolute;
-    height: 80px;
+    height: 70px;
     width: 100%;
-    background: var(--secondary-color);
-    bottom: 0;
+    background: #39A2D1;
+    bottom: -50px;
   }
   
   .wave::before, .wave::after {
@@ -88,11 +83,9 @@ section.home-wave {
   .wave::before {
     width: 55%;
     height: 100%;
-    background-color: var(--secondary-color);
+    background-color: #39A2D1;
     right: -1.5%;
     top: 40%;
-    left: 46%;
-
   }
   .wave::after {
     width: 55%;
@@ -101,7 +94,10 @@ section.home-wave {
     left: -1.5%;
     top: 60%;
   }
-/* End wave  */
+/* Start  container-wave-reverse */
+
+
+/* End  container-wave-reverse */
 /* Start floating Whatsapp  */
 .float-w{
     position:fixed;
@@ -156,9 +152,17 @@ section.home-wave {
     stroke: white;
     stroke-width: 5px;
  }
- .my-slash.white  svg path{
+ .my-slash.whtie  svg path{
+
     fill: white;
-    stroke: var(--secondary-color);
+    stroke: var(--main-color);
+
+ }
+ .my-slash.eee  svg path{
+
+    fill: #eee;
+    stroke: var(--main-color);
+
  }
 /* End my-slash */
 
