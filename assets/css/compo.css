@@ -1,0 +1,182 @@
+:root {
+    --main-color: #078BC5;
+    --secondary-color: #3BA9D2;
+}
+/* Start Components */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+img,
+video {
+    max-width: 100%;
+}
+max-width: 100%;
+.container {
+    padding: 0px 15px;
+}
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+video {
+    max-width: 100%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+/* End Components */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Start circle  */
+.circle {
+    position: relative;
+}
+.circle > :nth-child(2) {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    width: calc(100% + 24px);
+    height: calc(100% + 20px);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    overflow: visible;
+}
+.circle > :nth-child(2) {
+    stroke: white;
+    stroke-width: 3px;
+    fill: transparent;
+}
+/* End circle  */
+/* Start wave  */
+section.home-wave {
+
+    padding: 0;
+}
+.container-wave {
+    position: relative;
+    background: var(--main-color);
+    height: 80px;
+  }
+  
+  .wave {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background: var(--secondary-color);
+    bottom: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50% 100%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    right: -1.5%;
+    top: 40%;
+    left: 46%;
+
+  }
+  .wave::after {
+    width: 55%;
+    height: 109%;
+    background-color: #fff;
+    left: -1.5%;
+    top: 60%;
+  }
+/* End wave  */
+/* Start floating Whatsapp  */
+.float-w{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+  }
+.my-float{
+    margin-top:16px;
+}
+.primary-btn {
+    border: 2px solid var(--main-color);
+    width: fit-content;
+    margin: 15px auto;
+    padding: 8px 12px;
+    color: var(--main-color);
+    border-radius: 80px;
+    /* animation: scaling .7s linear infinite backwards; */
+    text-align: center;
+    min-width: 240px;
+}
+.primary-btn.white {
+    border: 2px solid white;
+    color: white;
+}
+/* End floating Whatsapp  */
+/* Start my-slash */
+.my-slash {
+    position: relative;
+}
+.my-slash svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    overflow: visible;
+}
+.my-slash svg path {
+     fill: var(--secondary-color);
+    stroke: white;
+    stroke-width: 5px;
+ }
+ .my-slash.white  svg path{
+    fill: white;
+    stroke: var(--secondary-color);
+ }
+/* End my-slash */
+
+/* Start footer  */
+footer {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer .contact  a {
+    text-decoration: none;
+    color: white ;
+}
+footer img {
+    width: 80px;
+}
+footer i {
+
+}

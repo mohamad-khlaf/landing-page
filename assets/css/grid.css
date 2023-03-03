@@ -1,0 +1,11 @@
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+}
+.gap-1 {
+    gap: 16px;
+}
+.gap-2 {
+    gap: 24px;
+}

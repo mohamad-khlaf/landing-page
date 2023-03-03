@@ -1,0 +1,162 @@
+/* Start home section  */
+section.home {
+    text-align: center;
+    position: relative;
+    z-index: -5;
+    min-height: 100vh;
+}
+section.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--main-color);
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    opacity: .8;
+}
+section.home .logo img {
+    width: 65px;
+}
+section.home video {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;    
+}
+section.home .video {
+    background-image: linear-gradient(to bottom, #1f1f1f, #111);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);    
+    width: fit-content;
+    max-width: 500px;
+    margin: auto;
+}
+section.home .overlay-imgs {
+
+}
+section.home .overlay-imgs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/flying-person.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 225px;
+    height: 180px;
+}
+@media (min-width: 576px) {
+    section.home .overlay-imgs::before  {
+        left: auto;
+        right: 30px;
+        top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    section.home .overlay-imgs::before  {
+        z-index: -4;
+    }
+}
+section.home .overlay-imgs::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/sound.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    bottom: 15px;
+    left: 10px;
+}
+/* End home section  */
+
+/* Start testimoails  */
+section.testimonials {
+    padding-top: 50px;
+    text-align: center;
+}
+section.testimonials .box {
+    background: #eeeeee85;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 1px #00000021;
+}
+section.testimonials .box  .starts img {
+    width: 110px;
+}
+section.testimonials blockquote{
+    position: relative;
+}
+section.testimonials blockquote::before {
+    content: "\f10e";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    color: var(--main-color);
+    z-index: 99999999;
+}
+section.testimonials blockquote::after {
+    content: "\f10d";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    position: absolute;
+    bottom: 10px;
+    left: -6px;
+    width: 20px;
+    height: 20px;
+    color: var(--main-color);
+    z-index: 99999999;
+}
+/* End testimoails  */
+/* Start Section why-us  */
+section.why-us {
+    background: var(--secondary-color);
+    color: white;
+}
+section.why-us .box .img {
+    width: 50px;
+    margin: auto;
+}
+section.why-us .box h3 {
+    color: black;
+    margin-bottom: 10px;
+    min-height: 75px;
+    text-align: center;
+}
+
+/* End Section why-us  */
+/* Start benefet */
+section.benefet .contianer-text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 150px;
+}
+section.benefet .texts img {
+    width: 80px;
+}
+/* End benefet */
+/* Start over section  */
+section.over {
+    background-color: #eee;
+}
+section.over .texts {
+    margin-right: 150px;
+}
+section.over .contianer-text-over {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+section.over .contianer-text-over img {
+    width: 80px;
+}
+/* End over section  */
