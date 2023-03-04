@@ -1,3 +1,15 @@
+
+@keyframes  key-c {
+    0% {
+        stroke-dasharray: 0 1500;
+        opacity: 1;
+    }
+    100% {
+        stroke-dasharray: 1500 1500;
+        opacity: 1;
+    }
+    
+}
 :root {
     --main-color: #078BC5;
     --secondary-color: #3BA9D2;
@@ -17,6 +29,19 @@ video {
 }
 .container {
     padding: 0px 15px;
+}
+@media (min-width: 992px) {
+    .container {
+        padding: 0px 50px;
+    }
+}
+@media (max-width: 576px) {
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 13px;
+    }
 }
 section {
     padding-top: 20px;
@@ -52,6 +77,19 @@ video {
     transform: translate(-50%,-50%);
     overflow: visible;
 }
+path {
+    stroke: white;
+    stroke-width: 9;
+    fill: none;
+    opacity: 0;
+    stroke-dasharray: 0 1500;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    animation: key-c 3s linear  infinite ;
+
+}
+
 .circle > :nth-child(2) {
     stroke: white;
     stroke-width: 3px;
@@ -79,19 +117,23 @@ video {
     position: absolute;
     border-radius: 50% 100%;
   }
+
+
+
+
   
   .wave::before {
-    width: 55%;
+    width: 50%;
     height: 100%;
     background-color: #39A2D1;
-    right: -1.5%;
+    right: 0%;
     top: 40%;
   }
   .wave::after {
-    width: 55%;
+    width: 53%;
     height: 109%;
     background-color: #fff;
-    left: -1.5%;
+    left: 4.5%;
     top: 60%;
   }
 /* Start  container-wave-reverse */
@@ -104,7 +146,7 @@ video {
     width:60px;
     height:60px;
     bottom:40px;
-    right:40px;
+    right:18px;
     background-color:#25d366;
     color:#FFF;
     border-radius:50px;
@@ -121,15 +163,37 @@ video {
     width: fit-content;
     margin: 15px auto;
     padding: 8px 12px;
-    color: var(--main-color);
     border-radius: 80px;
     /* animation: scaling .7s linear infinite backwards; */
     text-align: center;
     min-width: 240px;
+    cursor: pointer;
+    transition: .3s;
 }
+.primary-btn a {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: .3s;
+
+}
+
 .primary-btn.white {
     border: 2px solid white;
     color: white;
+    transition: .3s;
+
+}
+.primary-btn.white a {
+    color: white;
+    transition: .3s;
+
+}
+.primary-btn:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+.primary-btn:hover a {
+    color: white
 }
 /* End floating Whatsapp  */
 /* Start my-slash */
@@ -183,4 +247,9 @@ footer img {
 }
 footer i {
 
+}
+
+.fill-none {
+    fill: transparent !important;
+    stroke: var(--main-color) !important;
 }
