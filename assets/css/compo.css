@@ -68,10 +68,10 @@ video {
 }
 .circle > :nth-child(2) {
     position: absolute;
-    top: 61%;
+    top: 68%;
     left: 50%;
-    width: calc(100% + 24px);
-    height: calc(100% + 20px);
+    width: calc(100% + 33px);
+    height: calc(100% + 30px);
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
